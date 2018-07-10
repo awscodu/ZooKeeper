@@ -12,7 +12,7 @@ namespace ZooKeeper
     {
         public static List<string> GetAllZipFiles(string directory)
         {
-            return Directory.GetFiles(directory, "*.*", SearchOption.AllDirectories).ToList();
+            return Directory.GetFiles(directory, "*.zip", SearchOption.AllDirectories).ToList();
         }
 
         static void UnzipAll(string path, string targetPath, string password)
